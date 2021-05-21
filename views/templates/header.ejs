@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,35 +21,26 @@
     <title>Project</title>
   </head>
   <body>
-    <!-- <script>
-      function hideBar(x) {
+    <script>
+      function iconBar(x) {
         if (x.matches) {
           $(document).ready(function () {
-            $("#home").hide();
-            $("#page1").hide();
-            $("#page2").hide();
-            $("#page3").hide();
+            $( "#home" ).replaceWith( "<a href=\"/\" id=\"home\" class=\"icon--nav\"><div><i class=\"fas fa-home\"></i></div></a>" );
+            $( "#page1" ).replaceWith( "<a href=\"/page1\" id=\"page1\" class=\"icon--nav\"><div><i class=\"fas fa-comment-dots\"></i></div></a>" );
+            $( "#page2" ).replaceWith( "<a href=\"/page2\" id=\"page2\" class=\"icon--nav\"><div><i class=\"fas fa-user-tie\"></i></div></a>" );
+            $( "#page3" ).replaceWith( "<a href=\"/\" id=\"page3\" class=\"icon--nav\"><div><i class=\"fas fa-sign-out-alt\"></i></div></a>" );
           });
         } else {
-          $("#home").show();
-          $("#page1").show();
-          $("#page2").show();
-          $("#page3").show();
+          $( "#home" ).replaceWith( "<a href=\"/\" id=\"home\"><div>Homepage</div></a>" );
+          $( "#page1" ).replaceWith( "<a href=\"/page2\" id=\"page1\"><div>Page 1</div></a>" );
+          $( "#page2" ).replaceWith( "<a href=\"/page2\" id=\"page2\"><div>Page 2</div></a>" );
+          $( "#page3" ).replaceWith( "<a href=\"/\" id=\"page3\"><div>Log out</div></a>" );
         }
       }
       var x = window.matchMedia("(max-width: 800px)");
-      hideBar(x);
-      x.addListener(hideBar);
-
-      $(document).ready(function () {
-        $("#logo").click(function () {
-          $("#home").show();
-          $("#page1").show();
-          $("#page2").show();
-          $("#page3").show();
-        });
-      });
-    </script> -->
+      iconBar(x);
+      x.addListener(iconBar);
+    </script>
     <!-- NAVBAR DEBUT -->
     <header>
       <div class="bar bar__nav" id="bar_nav">
