@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@keyframes logo--animation {
+    from {
+        transform: translateY(5rem) rotate(-45deg);
+    }
+
+    to {
+        /* transform: translateX(-2rem); */
+        /* left: 2rem; */
+    }
+}

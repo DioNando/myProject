@@ -1,31 +1,29 @@
 @charset "UTF-8";
 
 :root {
-  --color-1: #0a3873;
+  /* --color-1: #3D79F2; */
+  /* H1 */
+  /* --color-2: #2D2E40; */
+  /* FOOTER */
+  /* --color-3: #030C26; */
+  /* HEADER */
+  /* --color-4: #5C8EF2; */
+  /* PRIMARY */
+  /* --color-5: #F2F2F2; */
+  /* SIDEBAR */
+  --color-1: #070C10;
+  --color-2: #708594;
+  --color-3: #162736;
+  --color-4: #00A4FA;
+  --color-5: #203449;
+  /* --color-1: #0a3873;
   --color-2: #011526;
   --color-3: #6cafd9;
   --color-4: #1252a6;
-  --color-5: #021d40;
+  --color-5: #021d40; */
   --color-white: #ebebf2;
   --color-grey: #363740;
   --color-black: #0a0b0d;
-  /* BUTTON COLOR */
-  --color-secondary: #7F8592;
-  --color-secondary-focus: #484B52;
-  --color-secondary-hover: #B7BFD2;
-  --color-secondary-active: #A1A8B8;
-  --color-success: #45BF55;
-  --color-success-focus: #044D29;
-  --color-success-hover: #97ED8A;
-  --color-success-active: #168039;
-  --color-danger: #D40D12;
-  --color-danger-focus: #450003;
-  --color-danger-hover: #94090D;
-  --color-danger-active: #5C0002;
-  --color-edit: #F39E02;
-  --color-edit-focus: #702D01;
-  --color-edit-hover: #F9B803;
-  --color-edit-active: #D96902;
 }
 
 @font-face {
@@ -88,17 +86,21 @@ body,
 }
 
 footer {
-  background-color: var(--color-5);
-  color: var(--color-white);
+  background-color: var(--color-grey);
   padding: 0.75rem 2rem 0.75rem 2rem;
   text-align: end;
   order: 4;
+}
+
+footer>* {
+  color: var(--color-white);
 }
 
 aside {
   background-color: var(--color-2);
   order: 2;
   flex: 1;
+  position: relative;
 }
 
 .logo img {
@@ -192,6 +194,7 @@ aside {
   padding: 1rem;
   background-color: var(--color-white);
   height: 500px;
+  box-shadow: 0 -4px 8px rgb(0 0 0 / 10%), 8px 0 8px rgb(0 0 0 / 10%);
 }
 
 .sub__main2 section:not(:first-child, :last-child) {
@@ -231,6 +234,7 @@ div.bar__nav {
   flex-direction: row;
   align-items: stretch;
   justify-content: space-around;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
 }
 
 div.bar__nav>a {
@@ -247,52 +251,18 @@ div.bar__side>a {
 }
 
 div.bar__nav>a:hover {
-  color: var(--color-2);
+  color: var(--color-4);
   transform: scale(1.5);
 }
 
 div.bar__side>a:hover {
-  color: var(--color-2);
+  color: var(--color-white);
   background-color: var(--color-3);
 }
 
-.icon {
-  display: flex;
-  flex-direction: row;
-  padding: 0 1rem 0 1rem;
-}
-
-.icon--nav {
-  font-size: 1.5rem;
-}
-
-.icon--proj {
-  color: var(--color-2);
-  font-size: 1.75rem;
-  transition: .3s;
-}
-
-.icon--proj:hover {
+div.bar__side>a:hover .icon__img {
   transform: scale(1.5);
-}
-
-.icon__img {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon__string {
-  flex: 3;
-}
-
-.icon__string--start {
-  text-align: start;
-}
-
-.icon__string--end {
-  text-align: end;
+  transition: .3s;
 }
 
 .proj-prev {
@@ -349,293 +319,31 @@ div.bar__side>a:hover {
   color: var(--color-black);
 }
 
-.button {
-  color: var(--color-white);
+
+.illustration {
   margin: 1rem;
-  border: none;
-  background-color: var(--color-4);
-  transition: 0.5s;
-  padding: 0.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  text-decoration: none;
-  border-radius: 0.25rem;
-  border: 2px solid transparent;
-}
-
-.button--outline {
-  color: var(--color-4);
-  border: 2px solid var(--color-4);
-}
-
-.button--outline:hover,
-.button--outline:focus,
-.button--outline:active {
-  color: var(--color-white);
-  border: 2px solid transparent;
-}
-
-.button--rounded {
-  border-radius: 50px;
-}
-
-.button--border {
-  border: 2px solid transparent !important;
-}
-
-.button:focus {
-  outline: none;
-  background-color: var(--color-5);
-}
-
-.button:hover {
-  background-color: var(--color-2);
-}
-
-.button:active {
-  background-color: var(--color-1);
-}
-
-.button--secondary {
-  background-color: var(--color-secondary);
-}
-
-.button--outline--secondary {
-  color: var(--color-secondary);
-  border: 2px solid var(--color-secondary);
-}
-
-.button--secondary:focus {
-  background-color: var(--color-secondary-focus);
-}
-
-.button--secondary:hover {
-  background-color: var(--color-secondary-hover);
-}
-
-.button--secondary:active {
-  background-color: var(--color-secondary-active);
-}
-
-.button--success {
-  background-color: var(--color-success);
-}
-
-.button--outline--success {
-  color: var(--color-success);
-  border: 2px solid var(--color-success);
-}
-
-.button--success:focus {
-  background-color: var(--color-success-focus);
-}
-
-.button--success:hover {
-  background-color: var(--color-success-hover);
-}
-
-.button--success:active {
-  background-color: var(--color-success-active);
-}
-
-.button--danger {
-  background-color: var(--color-danger);
-}
-
-.button--outline--danger {
-  color: var(--color-danger);
-  border: 2px solid var(--color-danger);
-}
-
-.button--danger:focus {
-  background-color: var(--color-danger-focus);
-}
-
-.button--danger:hover {
-  background-color: var(--color-danger-hover);
-}
-
-.button--danger:active {
-  background-color: var(--color-danger-active);
-}
-
-.button--edit {
-  background-color: var(--color-edit);
-}
-
-.button--outline--edit {
-  color: var(--color-edit);
-  border: 2px solid var(--color-edit);
-}
-
-.button--edit:focus {
-  background-color: var(--color-edit-focus);
-}
-
-.button--edit:hover {
-  background-color: var(--color-edit-hover);
-}
-
-.button--edit:active {
-  background-color: var(--color-edit-active);
-}
-
-.button--outline,
-.button--outline--secondary,
-.button--outline--success,
-.button--outline--danger,
-.button--outline--edit {
-  background-color: transparent;
-}
-
-.button .icon .icon__img,
-.button .icon .icon__string {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.button .icon {
-  padding: 0;
-}
-
-.circle-btn {
-  display: flex;
-  justify-content: center;
   align-items: center;
+}
+
+.illustration__side {
   position: absolute;
-  top: 0;
-  z-index: 5;
-  top: -3rem;
-  left: -3rem;
+  bottom: 0;
 }
 
-.circle-btn__sub {
-  width: 12.5rem;
-  height: 12.5rem;
-  background-color: var(--color-3);
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: transform .5s;
-}
-
-.circle-btn__sub__link:nth-child(1) {
-  top: .75rem;
-}
-
-.circle-btn__sub__link:nth-child(2) {
-  right: 1.5rem;
-}
-
-.circle-btn__sub__link:nth-child(3) {
-  left: 1.5rem;
-}
-
-.circle-btn__sub__link:nth-child(4) {
-  bottom: .75rem;
-}
-
-.change .circle-btn__sub {
-  transform: scale(1) rotate(0);
-}
-
-.circle-btn__sub__link {
-  position: absolute;
-}
-
-.circle-btn__sub__link {
-  font-size: 1.5rem;
-  color: var(--color-white);
-  transition: 0.3s;
-}
-
-.circle-btn__sub__link:hover {
-  color: var(--color-5);
-  transform: scale(1.5);
-}
-
-.circle-btn__click {
-  position: absolute;
-  width: 4rem;
-  height: 4rem;
-  background-color: var(--color-5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
-    0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-.circle-btn__click {
-  font-size: 1.5rem;
-  color: var(--color-white);
-  transition: transform 0.5s;
-}
-
-.change .circle-btn__click {
-  transform: rotate(45deg);
-  opacity: 1;
-}
-
-@media all and (max-width: 800px) {
-  div.bar__side>a .icon__img {
-    flex: 1;
-    order: 2;
-  }
-
-  div.bar__side>a .icon__string {
-    text-align: start;
-    padding-left: 2rem;
-    order: 1;
-    flex: 5;
-  }
-
-  .sub__main1 {
-    position: static;
-  }
-
-  .circle-btn {
-    position: fixed;
-    top: initial;
-    left: initial;
-    bottom: 1rem;
-  }
-
-  .circle-btn__click {
-    transform: translateX(-4rem) translateY(4rem);
-    opacity: .5;
-  }
-}
-
-@media all and (min-width: 800px) {
-  .main {
-    flex: 3 0px;
-  }
-
-  aside {
-    order: 1;
-    flex: 0.5 0 0;
-  }
-
-  .main {
-    order: 2;
-  }
-
-  footer {
-    order: 3;
-  }
+.illustration__side img {
+  width: 100%;
 }
 
 #logo {
   position: relative;
-  animation: mymove 4s infinite alternate;
+  transform: rotate(-45deg);
+  animation: logo--animation 4s;
+  transition: .5s;
 }
 
-@keyframes mymove {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(-90deg);}
+#logo:hover {
+  transform: rotate(45deg);
 }

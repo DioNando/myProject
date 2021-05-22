@@ -15,6 +15,9 @@ app.get("/page1", (request, response) => {
 app.get("/page2", (request, response) => {
   response.render("pages/page2");
 });
+app.get("/page3", (request, response) => {
+  response.render("pages/page3");
+});
 
 app.listen(8080);
 console.log("Beni soit le port 8080 ...");

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@media all and (max-width: 800px) {
+    aside {
+        position: static;
+    }
+
+    .illustration__side {
+        position: static;
+    }
+
+    div.bar__side>a .icon__img {
+        flex: 1;
+        order: 2;
+    }
+
+    div.bar__side>a .icon__string {
+        text-align: start;
+        padding-left: 2rem;
+        order: 1;
+        flex: 5;
+    }
+
+    .sub__main1 {
+        position: static;
+    }
+
+    .circle-btn {
+        position: fixed;
+        top: initial;
+        left: initial;
+        bottom: 1rem;
+    }
+
+    .circle-btn__click {
+        transform: translateX(-4rem) translateY(4rem);
+        opacity: .5;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .main {
+        flex: 3 0px;
+    }
+
+    aside {
+        order: 1;
+        flex: 0.5 0 0;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    footer {
+        order: 3;
+    }
+}
