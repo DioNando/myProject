@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="/assets/icons/shuttle.png" />
+  <link rel="shortcut icon" type="image/png" href="/assets/icons/share.png" />
   <!-- STYLE -->
   <link rel="stylesheet" href="/assets/css/all.css" />
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -28,14 +28,14 @@
       if (x.matches) {
         $(document).ready(function () {
           $("#home").replaceWith(
-            "<a href=\"/\" id=\"home\" class=\"icon--nav\"><div><i class=\"fas fa-fire\"></i></div></a>");
+            "<a href=\"/\" id=\"home\" class=\"icon--nav drop\"><div><i class=\"fas fa-fire\"></i></div></a>");
           $("#page1").replaceWith(
-            "<a href=\"/page1\" id=\"page1\" class=\"icon--nav\"><div><i class=\"fas fa-paper-plane\"></i></div></a>"
+            "<a href=\"/page1\" id=\"page1\" class=\"icon--nav drop\"><div><i class=\"fas fa-paper-plane\"></i></div></a>"
           );
           $("#page2").replaceWith(
-            "<a href=\"/page2\" id=\"page2\" class=\"icon--nav\"><div><i class=\"fas fa-heart\"></i></div></a>");
+            "<a href=\"/page2\" id=\"page2\" class=\"icon--nav drop\"><div><i class=\"fas fa-heart\"></i></div></a>");
           $("#page3").replaceWith(
-            "<a href=\"/page3\" id=\"page3\" class=\"icon--nav\"><div><i class=\"fas fa-user-friends\"></i></div></a>"
+            "<a href=\"/page3\" id=\"page3\" class=\"icon--nav drop\"><div><i class=\"fas fa-user-friends\"></i></div></a>"
           );
         });
       } else {
@@ -63,7 +63,7 @@
     <div class="bar bar__nav" id="bar_nav">
       <a href="/" class="logo" id="logo">
         <div>
-          <img src="/assets/icons/shuttle.svg" alt="project" />
+          <img src="/assets/icons/share.svg" alt="project" />
         </div>
       </a>
       <a href="/" id="home">
@@ -83,6 +83,16 @@
   <!-- MENU DEBUT -->
   <aside>
     <div class="bar bar__side">
+      <div class="user">
+        <div class="user__img">
+          <img src="/assets/images/profile/profile (2).png" alt="profile" />
+        </div>
+        <div class="user__title">
+          <h2>Name</h2>
+          <h3>Function</h3>
+        </div>
+        <hr class="user--line">
+      </div>
       <a href="/">
         <div class="icon">
           <div class="icon__img"><i class="fas fa-calendar-day"></i></div>
@@ -108,7 +118,7 @@
         </div>
       </a>
       <div class="illustration illustration__side">
-        <img src="/assets/illustration/Read-to-use Scenes/SVG/Illustration 7.svg" alt="Illustration">
+        <img src="/assets/illustration/Read-to-use Scenes/SVG/Illustration 1.svg" alt="Illustration">
       </div>
     </div>
 

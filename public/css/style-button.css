@@ -31,7 +31,7 @@
 }
 
 .icon--proj {
-    color: var(--color-2);
+    color: var(--color-secondary);
     font-size: 1.75rem;
     transition: .3s;
 }
@@ -48,7 +48,7 @@
 }
 
 .icon__string {
-    flex: 3;
+    flex: 5;
 }
 
 .icon__string--start {
@@ -212,7 +212,6 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 0;
     z-index: 5;
     top: -3rem;
     left: -3rem;
@@ -227,7 +226,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    transform: scale(0);
+    transform: scale(0) rotate(360deg);
     transition: transform .5s;
 }
 
@@ -262,7 +261,7 @@
 }
 
 .circle-btn__sub__link:hover {
-    color: var(--color-4);
+    color: var(--color-2);
     transform: scale(1.5);
 }
 
@@ -287,6 +286,27 @@
 }
 
 .change .circle-btn__click {
-    transform: rotate(45deg);
+    transform: rotate(360deg);
     opacity: 1;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: .75rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--color-5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-3);
+    transition: 2.5s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-2);
 }

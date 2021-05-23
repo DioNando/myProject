@@ -5,8 +5,36 @@
         transform: translateY(5rem) rotate(-45deg);
     }
 
-    to {
-        /* transform: translateX(-2rem); */
-        /* left: 2rem; */
+    50% {
+        transform: rotate(-360deg) scale(1.5);
     }
 }
+
+@keyframes loading--animation {
+    from {
+        transform: rotate(360deg);
+    }
+    
+    50% {
+        transform: scale(1.25) rotate(360deg);
+    }
+}
+
+@keyframes blink--animation {
+    from {
+        opacity: .5;
+    }
+}
+
+@keyframes blink2--animation {
+    from  {
+        color: var(--color-white);
+    }
+}
+
+@keyframes drop--animation {
+    from {
+        transform: translateY(-3rem);
+    }
+}
+

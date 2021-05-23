@@ -21,20 +21,120 @@
         flex: 5;
     }
 
+    .sub.sub__row {
+        flex-direction: column;
+    }
+
     .sub__main1 {
-        position: static;
+        order: 2;
+        margin-right: 0;
+        margin-top: 1rem;
+        overflow: auto;
+        height: 400px;
     }
 
-    .circle-btn {
-        position: fixed;
-        top: initial;
-        left: initial;
-        bottom: 1rem;
+    .sub__main2 {
+        flex-direction: row;
+        order: 1;
+        flex: initial;
+        margin-left: 0;
+        overflow-x: auto;
+        align-items: flex-end;
+        display: none;
     }
 
-    .circle-btn__click {
-        transform: translateX(-4rem) translateY(4rem);
-        opacity: .5;
+    .sub__main2>section {
+        margin: .5rem;
+    }
+
+    .sub__main2>section:first-child {
+        margin-left: 0;
+    }
+
+    .sub__main2>section:first-child {
+        margin-right: 0;
+    }
+
+    .sub__main2 .proj-prev {
+        padding: .5rem;
+        border-radius: .75rem;
+    }
+
+    .sub__main4 .sub__title {
+        padding-right: .75rem;
+        margin-left: initial;
+        height: 5.1rem;
+    }
+
+    .sub__main4 .sub__title form .button {
+        display: none;
+    }
+
+    .proj-prev__image>img {
+        width: 8rem;
+    }
+
+    .sub__main2 .proj-prev .proj-prev__byline,
+    .proj-prev .proj-prev__heading {
+        display: none;
+    }
+
+    .sub__h1 h1:nth-child(1) {
+        order: 5;
+    }
+
+    .sub__h1 h1:nth-child(2) {
+        order: 1;
+    }
+
+    .sub__h1 a {
+        order: 3;
+    }
+
+    .sub__h1 .line {
+        display: none;
+    }
+
+    .illustration__sub img {
+        width: 5rem;
+    }
+
+    .user {
+        padding: .5rem;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .user--line {
+        display: none;
+    }
+
+    .user__img {
+        width: 7rem;
+        height: 7rem;
+        margin-left: 1rem;
+    }
+
+    .user__title {
+        text-align: end;
+    }
+
+    .sub__input__option>.icon {
+        font-size: 1.5rem;
+    }
+
+    .sub__title {
+        padding-right: .5rem;
+        padding-left: 1rem;
+    }
+
+    .sub__title h2 {
+        text-align: end;
+    }
+
+    input {
+        width: 100%;
     }
 }
 
