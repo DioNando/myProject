@@ -1,0 +1,54 @@
+<%- include("../templates/header"); %>
+
+<div class="main">
+  <h1>Map</h1>
+  <div class="sub__main">
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <div class="center">
+      <div id="regions_div" style="width: 100%;"></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  google.charts.load('current', {
+    'packages': ['geochart'],
+    // Note: you will need to get a mapsApiKey for your project.
+    // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+    'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+  });
+  google.charts.setOnLoadCallback(drawRegionsMap);
+
+  function drawRegionsMap() {
+    var data = google.visualization.arrayToDataTable([
+      ['Country', 'Popularity'],
+      ['Germany', 2],
+      ['United States', 4.5],
+      ['Brazil', 4],
+      ['Canada', 5.5],
+      ['France', 6],
+      ['RU', 2.5],
+      ['Madagascar', 10],
+      ['China', 8.5],
+      ['Japan', 5.5]
+    ]);
+
+    var options = {
+      backgroundColor: '#F2F2F2',
+      colorAxis: {
+        colors: ['#EEB915']
+      },
+      datalessRegionColor: '#F2F2F2',
+      defaultColor: '#EEB915',
+    };
+
+    var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+    chart.draw(data, options);
+  }
+</script>
+
+<%- include("../templates/footer"); %>

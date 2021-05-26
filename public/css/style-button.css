@@ -2,10 +2,10 @@
 
 :root {
     /* BUTTON COLOR */
-    --color-secondary: #7F8592;
-    --color-secondary-focus: #484B52;
-    --color-secondary-hover: #B7BFD2;
-    --color-secondary-active: #A1A8B8;
+    --color-secondary: #595959;
+    --color-secondary-hover: #A6A6A6;
+    --color-secondary-focus: #737373;
+    --color-secondary-active: #404040;
     --color-success: #45BF55;
     --color-success-focus: #044D29;
     --color-success-hover: #97ED8A;
@@ -61,7 +61,7 @@
 
 .button {
     color: var(--color-white);
-    margin: 1rem;
+    margin: .5rem;
     border: none;
     background-color: var(--color-1);
     transition: 0.5s;
@@ -70,6 +70,10 @@
     text-decoration: none;
     border-radius: 0.25rem;
     border: 2px solid transparent;
+}
+
+.button--flex--end {
+    align-self: flex-end;
 }
 
 .button--outline {
@@ -283,11 +287,11 @@
     font-size: 1.5rem;
     color: var(--color-white);
     transition: transform 0.5s;
+
 }
 
 .change .circle-btn__click {
     transform: rotate(360deg);
-    opacity: 1;
 }
 
 /* width */

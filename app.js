@@ -18,6 +18,15 @@ app.get("/page2", (request, response) => {
 app.get("/page3", (request, response) => {
   response.render("pages/page3");
 });
+app.get("/page4", (request, response) => {
+  response.render("pages/page4");
+});
+app.get("/page5", (request, response) => {
+  response.render("pages/page5");
+});
+app.get("/page6", (request, response) => {
+  response.render("pages/page6");
+});
 
 app.listen(8080);
 console.log("Beni soit le port 8080 ...");

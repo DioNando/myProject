@@ -2,11 +2,12 @@
 
 @media all and (max-width: 800px) {
     aside {
-        position: static;
+        display: flex;
     }
 
     .illustration__side {
         position: static;
+        justify-content: center;
     }
 
     div.bar__side>a .icon__img {
@@ -19,6 +20,10 @@
         padding-left: 2rem;
         order: 1;
         flex: 5;
+    }
+    
+    div.bar__side .illustration__side img {
+        width: 40%;
     }
 
     .sub.sub__row {
@@ -135,6 +140,33 @@
 
     input {
         width: 100%;
+    }
+
+    #logo2 img {
+        width: 7rem;
+    }
+
+    .form__row {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form__group {
+        margin: 0;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .form__checkbox--row, .form__radio--row {
+        flex-direction: column;
+    }
+
+    .button--flex--end {
+        align-self: center;
+    }
+
+    .sub__form__button {
+        justify-content: space-evenly;
     }
 }
 

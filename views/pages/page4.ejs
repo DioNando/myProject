@@ -1,0 +1,289 @@
+<%- include("../templates/header"); %>
+
+<div class="main">
+  <h1>Templates</h1>
+  <div class="sub__main">
+
+
+    <form action="" method="post">
+      <div class="form__row">
+        <div class="form__group">
+          <label for="">Name</label>
+          <input type="text" name="" id="" placeholder="Name">
+        </div>
+        <div class="form__group">
+          <label for="">Firstname</label>
+          <input type="text" name="" id="" placeholder="Firstname">
+        </div>
+        <div class="form__group">
+          <label for="">Number</label>
+          <input type="number" name="" id="" placeholder="+261 ...">
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label for="">Mail</label>
+          <input type="mail" name="" id="" placeholder="name@mail.com">
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__group">
+          <label for="">Date</label>
+          <input type="date" name="" id="">
+        </div>
+        <div class="form__group">
+          <label for="">Time</label>
+          <input type="time" name="" id="">
+        </div>
+        <div class="form__group">
+          <label for="">Datalist</label>
+          <input list="list" name="">
+          <datalist id="list">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__group">
+          <label for="">Textarea</label>
+          <textarea name="" id="" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__group">
+          <label for="">Options value 1</label>
+          <select id="" name="">
+            <option value="" style="display: none;"></option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+          </select>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__group">
+          <label for="">Options value 2</label>
+          <select id="" name="">
+            <option value="" style="display: none;"></option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+          </select>
+        </div>
+        <button type="button" class="button button--flex--end" disabled>
+          <i class="fas fa-angle-double-right"></i>
+        </button>
+        <div class="form__group">
+          <label for="">Options value 3</label>
+          <select id="" name="">
+            <option value="" style="display: none;"></option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+          </select>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__group">
+          <label>Gender</label>
+          <fieldset>
+            <div class="form__radio">
+              <div>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+              </div>
+              <div>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+              </div>
+              <div>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form__group">
+          <label>Class</label>
+          <fieldset>
+            <div class="form__checkbox">
+              <div>
+                <input type="checkbox" id="1" name="" value="1">
+                <label for="1">Class 1</label>
+              </div>
+              <div>
+                <input type="checkbox" id="2" name="" value="2">
+                <label for="2">Class 2</label>
+              </div>
+              <div>
+                <input type="checkbox" id="3" name="" value="3">
+                <label for="3">Class 3</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__group">
+          <label>Type</label>
+          <fieldset>
+            <div class="form__checkbox form__checkbox--row">
+              <div>
+                <input type="checkbox" id="type1" name="" value="1">
+                <label for="type1">Type 1</label>
+              </div>
+              <div>
+                <input type="checkbox" id="type2" name="" value="2">
+                <label for="type2">Type 2</label>
+              </div>
+              <div>
+                <input type="checkbox" id="type3" name="" value="3">
+                <label for="type3">Type 3</label>
+              </div>
+              <div>
+                <input type="checkbox" id="type4" name="" value="4">
+                <label for="type4">Type 4</label>
+              </div>
+              <div>
+                <input type="checkbox" id="type5" name="" value="5">
+                <label for="type5">Type 5</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+
+
+
+      <div class="sub sub__form__button">
+        <div>
+          <button type="reset" class="button button--outline">
+            <div class="icon">
+              <div class="icon__string icon__string--end">Cancel</div>
+              <div class="icon__img"><i class="fas fa-times"></i></div>
+            </div>
+          </button>
+        </div>
+        <div>
+          <button type="submit" class="button">
+            <div class="icon">
+              <div class="icon__string icon__string--end">Validate</div>
+              <div class="icon__img"><i class="fas fa-check"></i></div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </form>
+
+
+
+
+
+    <div class="sub sub--wrap">
+      <hr class="line">
+      <legend><h2>Buttons</h2></legend>
+      <button type="button" class="button button--outline button--border">Primary</button>
+      <button type="button" class="button">Primary</button>
+      <button type="button" class="button button--secondary">Secondary</button>
+      <button type="button" class="button button--success">Success</button>
+      <button type="button" class="button button--danger">Danger</button>
+      <button type="button" class="button button--edit">Edit</button>
+      <button type="button" class="button button--rounded">Rounded</button>
+    </div>
+    <div class="sub sub--wrap">
+      <button type="button" class="button button--outline">Primary Out</button>
+      <button type="button" class="button button--secondary button--outline--secondary button--outline">Secondary
+        Out</button>
+      <button type="button" class="button button--success button--outline--success button--outline">Success Out</button>
+      <button type="button" class="button button--danger button--outline--danger button--outline">Danger Out</button>
+      <button type="button" class="button button--edit button--outline--edit button--outline">Edit Out</button>
+      <button type="button" class="button button--outline button--rounded button--border">Rounded</button>
+      <button type="button" class="button button--outline button--rounded">Rounded</button>
+    </div>
+    <div class="sub sub--wrap">
+      <a href="#">
+        <button type="button" class="button">
+          <div class="icon">
+            <div class="icon__img"><i class="fas fa-cloud-moon"></i></div>
+            <div class="icon__string icon__string--start">Cloud</div>
+          </div>
+        </button>
+      </a>
+      <a href="#">
+        <button type="button" class="button button--outline">
+          <div class="icon">
+            <div class="icon__img"><i class="fas fa-calculator"></i></div>
+            <div class="icon__string icon__string--start">Add</div>
+          </div>
+        </button>
+      </a>
+      <a href="#">
+        <button type="button" class="button">
+          <div class="icon">
+            <div class="icon__string icon__string--end">Configuration</div>
+            <div class="icon__img"><i class="fas fa-cogs"></i></div>
+          </div>
+        </button>
+      </a>
+      <a href="#">
+        <button type="button" class="button button--outline">
+          <div class="icon">
+            <div class="icon__string icon__string--end">Address</div>
+            <div class="icon__img"><i class="fas fa-address-card"></i></div>
+          </div>
+        </button>
+      </a>
+      <a href="#">
+        <button type="button" class="button button--outline button--rounded">
+          <div class="icon">
+            <div class="icon__string icon__string--end">Tools</div>
+            <div class="icon__img"><i class="fas fa-tools"></i></div>
+          </div>
+        </button>
+      </a>
+      <a href="#">
+        <button type="button" class="button button--rounded">
+          <div class="icon">
+            <div class="icon__img"><i class="fas fa-tags"></i></div>
+            <div class="icon__string icon__string--start">Tags</div>
+          </div>
+        </button>
+      </a>
+    </div>
+    <div class="sub sub--wrap">
+      <button type="button" class="button button--outline">
+        <i class="fas fa-address-card"></i>
+      </button>
+      <button type="button" class="button">
+        <i class="fas fa-calculator"></i>
+      </button>
+      <button type="button" class="button button--outline button--rounded button--border">
+        <i class="fas fa-cloud-moon"></i>
+      </button>
+      <button type="button" class="button button--outline button--border button--danger button--outline--danger">
+        <i class="fas fa-cogs"></i>
+      </button>
+      <button type="button" class="button button--rounded button--outline">
+        <i class="fas fa-users"></i>
+      </button>
+      <button type="button" class="button button--rounded button--edit">
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+
+
+
+
+  </div>
+</div>
+</div>
+
+<%- include("../templates/footer"); %>
